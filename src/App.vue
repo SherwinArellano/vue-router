@@ -2,9 +2,11 @@
   <h1>Hello App!</h1>
   <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
   <nav>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/about">Go to About</RouterLink>
-    <RouterLink to="/posts">Go to Posts</RouterLink>
+    <BButtonGroup>
+      <BButton to="/">Go to Home</BButton>
+      <BButton to="/about">Go to About</BButton>
+      <BButton to="/posts">Go to Posts</BButton>
+    </BButtonGroup>
   </nav>
   <main>
     <RouterView />
